@@ -159,6 +159,7 @@ func Provider() *schema.Provider {
 			"github_membership":                                                     resourceGithubMembership(),
 			"github_organization_block":                                             resourceOrganizationBlock(),
 			"github_organization_custom_role":                                       resourceGithubOrganizationCustomRole(),
+			"github_organization_ip_allow_list_entry":                               resourceGithubOrganizationIpAllowListEntry(),
 			"github_organization_project":                                           resourceGithubOrganizationProject(),
 			"github_organization_security_manager":                                  resourceGithubOrganizationSecurityManager(),
 			"github_organization_ruleset":                                           resourceGithubOrganizationRuleset(),
@@ -195,6 +196,7 @@ func Provider() *schema.Provider {
 			"github_user_ssh_key":                                                   resourceGithubUserSshKey(),
 			"github_enterprise_organization":                                        resourceGithubEnterpriseOrganization(),
 			"github_enterprise_actions_runner_group":                                resourceGithubActionsEnterpriseRunnerGroup(),
+			"github_enterprise_ip_allow_list_entry":                                 resourceGithubEnterpriseIpAllowListEntry(),
 		},
 
 		DataSourcesMap: map[string]*schema.Resource{
